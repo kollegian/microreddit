@@ -1,0 +1,10 @@
+<%=@post.title%>
+<%=@post.text%>
+<%=@post.user.name%>
+<p>
+comments
+</p><br/>
+<%@post.comments.each do |com|%>
+<%=com.text%>
+<%end%>
+<%=render 'comments/formc'%>
